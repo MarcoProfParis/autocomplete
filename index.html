@@ -178,16 +178,16 @@ const ACCESS_TOKEN = 'sk.eyJ1IjoibW9yZXVsYSIsImEiOiJjbTQwbjVydmUwZ2FjMmtzZ3ZzaHN
         autofillCollection = mapboxsearch.autofill({});
 
         // initialize a minimap
-        minimap = new MapboxAddressMinimap();
-        minimap.canAdjustMarker = true;
-        minimap.satelliteToggle = true;
-        minimap.onSaveMarkerLocation = (lnglat) => {
-            console.log(`Marker moved to ${lnglat}`);
+       // minimap = new MapboxAddressMinimap();
+       // minimap.canAdjustMarker = true;
+       // minimap.satelliteToggle = true;
+       // minimap.onSaveMarkerLocation = (lnglat) => {
+       //     console.log(`Marker moved to ${lnglat}`);
         };
 
         // append the minimap to the page
-        const minimapContainer = document.getElementById("minimap-container");
-        minimapContainer.appendChild(minimap);
+       // const minimapContainer = document.getElementById("minimap-container");
+       // minimapContainer.appendChild(minimap);
 
         // when the user selects a suggested address, show the minimap
         autofillCollection.addEventListener(
